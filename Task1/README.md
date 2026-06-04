@@ -13,7 +13,7 @@ Hardware Used
 
 Software Used
 
-- Arduino IDE 2.x
+- Arduino IDE 2.3.9
 
 Tasks Performed
 
