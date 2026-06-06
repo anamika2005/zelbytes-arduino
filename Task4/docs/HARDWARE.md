@@ -1,109 +1,118 @@
-Hardware Documentation
+# Hardware Documentation
 
-Project
+## Project Title
 
 Analog Sensor Calibration Suite
 
-Microcontroller
+---
 
-Component| Specification
-Board| Arduino Uno
-Operating Voltage| 5V
-Serial Communication| 9600 baud
+## Development Board
+
+| Parameter | Specification |
+|------------|--------------|
+| Board | Arduino Uno |
+| Operating Voltage | 5V |
+| Serial Baud Rate | 9600 |
 
 ---
 
-Components Used
+## Components Used
 
-Component| Quantity
-Arduino Uno| 1
-LDR (Light Dependent Resistor)| 1
-10kΩ Resistor| 1
-DHT22 Temperature & Humidity Sensor| 1
-HC-SR04 Ultrasonic Sensor| 1
-Capacitive Soil Moisture Sensor v1.2| 1
-Breadboard| 1
-Jumper Wires| As Required
-
----
-
-Pin Configuration
-
-Sensor| Arduino Pin
-LDR| A0
-DHT22 Data| D4
-HC-SR04 TRIG| D9
-HC-SR04 ECHO| D10
-Soil Moisture AOUT| A1
-Soil Moisture Power| D7
+| Component | Quantity |
+|-----------|----------|
+| Arduino Uno | 1 |
+| LDR (Light Dependent Resistor) | 1 |
+| 10kΩ Resistor | 1 |
+| DHT22 Temperature & Humidity Sensor | 1 |
+| HC-SR04 Ultrasonic Sensor | 1 |
+| Capacitive Soil Moisture Sensor v1.2 | 1 |
+| Breadboard | 1 |
+| Jumper Wires | As Required |
 
 ---
 
-Sensor Descriptions
+## Pin Configuration
 
-LDR (Light Dependent Resistor)
-
-- Analog light sensor.
-- Used to classify light conditions as DARK, AMBIENT, or BRIGHT.
-- Connected through a voltage divider circuit.
-
-Calibration Parameters
-
-- DARK_THRESHOLD = 300
-- BRIGHT_THRESHOLD = 700
+| Sensor | Arduino Pin |
+|---------|------------|
+| LDR | A0 |
+| DHT22 Data | D4 |
+| HC-SR04 TRIG | D9 |
+| HC-SR04 ECHO | D10 |
+| Soil Moisture AOUT | A1 |
+| Soil Moisture Power | D7 |
 
 ---
 
-DHT22
+## Sensor Descriptions
 
-- Digital temperature and humidity sensor.
-- Measures ambient temperature and relative humidity.
-- Sampling interval set to 2 seconds.
+### LDR (Light Dependent Resistor)
 
----
+**Purpose:** Measure ambient light intensity.
 
-HC-SR04 Ultrasonic Sensor
+**Calibration Parameters**
 
-- Measures distance using ultrasonic pulses.
-- Operating range approximately 2 cm to 400 cm.
-- Timeout protection implemented to prevent blocking.
-
-Pin Assignment
-
-- TRIG → D9
-- ECHO → D10
+| Parameter | Value |
+|-----------|-------|
+| DARK_THRESHOLD | 300 |
+| BRIGHT_THRESHOLD | 700 |
 
 ---
 
-Capacitive Soil Moisture Sensor v1.2
+### DHT22 Temperature & Humidity Sensor
 
-- Measures soil moisture using capacitive sensing.
-- Analog output connected to A1.
-- Sensor power controlled through D7.
+**Purpose:** Measure temperature and humidity.
 
-Calibration Constants
-
-- DRY_ADC = 820
-- WET_ADC = 380
+| Parameter | Value |
+|-----------|-------|
+| Data Pin | D4 |
+| Read Interval | 2000 ms |
 
 ---
 
-Operating Conditions
+### HC-SR04 Ultrasonic Sensor
 
-Parameter| Value
-Supply Voltage| 5V
-Baud Rate| 9600
-Controller| Arduino Uno
+**Purpose:** Measure distance using ultrasonic pulses.
+
+| Parameter | Value |
+|-----------|-------|
+| TRIG Pin | D9 |
+| ECHO Pin | D10 |
+| Timeout | 30000 µs |
 
 ---
 
-Summary
+### Capacitive Soil Moisture Sensor v1.2
 
-This hardware setup integrates four sensors:
+**Purpose:** Measure relative soil moisture.
 
-1. LDR for light intensity measurement.
-2. DHT22 for temperature and humidity monitoring.
-3. HC-SR04 for distance measurement.
-4. Capacitive Soil Moisture Sensor for soil condition monitoring.
+| Parameter | Value |
+|-----------|-------|
+| Analog Pin | A1 |
+| Power Pin | D7 |
+| DRY_ADC | 820 |
+| WET_ADC | 380 |
 
-The sensors are calibrated and validated through Serial Monitor outputs and logged in CSV-compatible format.
+---
+
+## Operating Conditions
+
+| Parameter | Value |
+|-----------|-------|
+| Supply Voltage | 5V |
+| Controller | Arduino Uno |
+| Communication | USB Serial |
+| Baud Rate | 9600 |
+
+---
+
+## Summary
+
+The system consists of:
+
+- LDR for ambient light measurement
+- DHT22 for temperature and humidity monitoring
+- HC-SR04 for distance measurement
+- Capacitive Soil Moisture Sensor for soil moisture detection
+
+All sensors were tested individually and later integrated into a unified logging module producing CSV-style serial output for calibration and analysis.
