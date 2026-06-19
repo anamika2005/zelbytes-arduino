@@ -1,4 +1,4 @@
-# Zelbytes Arduino Foundations Internship Repository
+# Zelbytes Arduino Internship Repository
 
 ## Student Information
 
@@ -6,260 +6,210 @@
 **KTU ID:** SCT23EC023  
 **College:** Sree Chitra Thirunal College of Engineering, Pappanamcode, Thiruvananthapuram  
 **Branch:** Electronics and Communication Engineering  
-**Internship:** Zelbytes Arduino Foundations Internship
 
 ---
 
-# Repository Overview
+# Internship Overview
 
-This repository contains all tasks, source code, documentation, reports, images, dashboards, and project deliverables completed during the Zelbytes Arduino Foundations Internship.
+This repository contains all tasks completed as part of the Zelbytes Arduino Foundations Internship.
 
-The internship covered:
+The internship focused on Arduino programming, ESP32 development, sensor interfacing, automation, IoT integration, dashboard development, firmware design, testing, documentation, and Git-based project management.
+
+---
+
+# Internship Learning Outcomes
+
+During this internship, the following skills were developed:
 
 - Arduino Programming
-- Embedded Systems Fundamentals
-- Git and GitHub Workflow
+- ESP32 Firmware Development
 - Sensor Interfacing
+- Relay and Actuator Control
 - State Machine Design
-- Data Logging
-- Dashboard Development
-- IoT Cloud Integration
-- Automated Irrigation Systems
+- Embedded Systems Fundamentals
+- Serial Communication
+- IoT System Development
+- Cloud Telemetry Integration
+- Dashboard Development using Streamlit
+- Git and GitHub Version Control
 - Technical Documentation
+- Testing and Validation
 
 ---
 
-# Task Summary
+# Embedded Systems Applications Used
 
-## Task 1 – Arduino Foundations
+Throughout this internship, embedded systems concepts were applied in multiple tasks.
 
-### Objective
-Introduction to Arduino programming and board bring-up.
+### Sensor Interfacing
 
-### Deliverables
-- LED Blink Program
-- Serial Monitor Output
-- Basic Arduino Development Workflow
+The microcontroller was connected to sensors and used to acquire real-time environmental data.
 
----
+Examples:
 
-## Task 2 – Git for Firmware Projects
+- LDR Sensor
+- DHT22 Sensor
+- Soil Moisture Sensor
 
-### Objective
-Learn GitHub repository management and version control.
+### Real-Time Data Processing
 
-### Deliverables
-- Git Repository Setup
-- Folder Organization
-- Documentation Workflow
+Sensor readings were continuously processed by firmware running on Arduino and ESP32 platforms.
 
----
+Examples:
 
-## Task 3 – Digital Inputs and Outputs
+- Moisture percentage calculation
+- Threshold-based decision making
+- Environmental monitoring
 
-### Objective
-Implement button-controlled digital output systems.
+### Actuator Control
 
-### Deliverables
-- Push Button Input
-- LED Control
-- Debouncing Concepts
+The microcontroller controlled external devices based on sensor readings and user commands.
 
----
+Examples:
 
-## Task 4 – Sensor Integration
+- Relay module control
+- LED status indication
+- Automated irrigation control
 
-### Objective
-Interface environmental sensors with Arduino.
+### State Machine Design
 
-### Deliverables
-- Sensor Data Acquisition
-- Analog Input Processing
-- Serial Monitoring
+Finite State Machine (FSM) concepts were implemented for automation tasks.
 
----
+States used include:
 
-## Task 5 – Irrigation State Machine
-
-### Objective
-Develop a finite state machine for irrigation control.
-
-### Deliverables
-- State Machine Design
-- Threshold Logic
-- Automatic Control System
-
----
-
-## Task 6 – PWM Motor and Emergency Stop
-
-### Objective
-Implement PWM-based motor control and emergency stop functionality.
-
-### Deliverables
-- PWM Speed Control
-- Emergency Stop Circuit
-- Safety Testing
-
----
-
-## Task 7 – Environmental Logger
-
-### Objective
-Build an environmental monitoring system.
-
-### Deliverables
-- Sensor Logging
-- Documentation
-- Testing Reports
-
----
-
-## Task 8 – IoT Laboratory
-
-### Objective
-Transmit sensor data to cloud services and visualize results.
-
-### Deliverables
-- Cloud Telemetry
-- Dashboard Development
-- Data Visualization
-
----
-
-## Task 9 – Automated Grow-Bench Prototype
-
-### Objective
-Develop an automated irrigation system using ESP32.
-
-### Features
-
-- Soil Moisture Monitoring
-- Automatic Irrigation
+- Monitoring
+- Irrigation
 - Manual Override
-- Relay Control
-- Dashboard Visualization
-- Cloud Telemetry
-- Serial Commands
+- Fault Handling
 
-### Deliverables
+### IoT Integration
 
-- Firmware Source Code
-- Dashboard Application
-- Documentation
-- Demo Video
-- Git Tag v1.0-capstone
+ESP32 was used to connect hardware systems to cloud services.
+
+Features:
+
+- WiFi communication
+- Sensor data upload
+- Dashboard visualization
+  
+---
+
+# Project Highlights
+
+## Task 1
+
+Arduino board bring-up and LED testing.
+
+## Task 2
+
+Git and GitHub project setup.
+
+## Task 3
+
+Sensor interfacing and calibration exercises.
+
+## Task 4
+
+Data acquisition and environmental monitoring.
+
+## Task 5
+
+State machine based irrigation controller.
+
+## Task 6
+
+Relay control and automation logic.
+
+## Task 7
+
+System integration and testing.
+
+## Task 8
+
+IoT dashboard development and cloud telemetry.
+
+## Task 9
+
+Automated Grow-Bench Prototype with:
+
+- Auto irrigation
+- Manual override
+- Dashboard visualization
+- Sensor monitoring
+- Data logging
+
+## Task 10
+
+Final firmware documentation including:
+
+- Hardware documentation
+- Calibration methodology
+- Testing procedures
+- Maintenance instructions
+- Handoff documentation
 
 ---
 
-## Task 10 – Final Firmware Report
+# Version Tags
 
-### Objective
+The project milestones were maintained using Git tags.
 
-Prepare final project documentation and handoff materials.
-
-### Deliverables
-
-- FINAL_REPORT.md
-- TEST_REPORT.md
-- RETRO.md
-- LIBRARIES.txt
-- Project Images
-- Final GitHub Repository
+| Tag | Description |
+|------|-------------|
+| v0.1-manual | Manual control implementation |
+| v0.2-phase2 | Intermediate integrated prototype |
+| v1.0-capstone | Final Grow-Bench Prototype Release |
 
 ---
 
-# Final Capstone Project
+# Dashboard Features
 
-## Automated Grow-Bench Prototype
+The dashboard provides:
 
-### Description
-
-The final capstone project is an IoT-based automated irrigation system designed using ESP32, soil moisture sensing, cloud telemetry, and dashboard visualization.
-
-### Major Features
-
-- Automatic Irrigation Control
-- Manual Override
-- Soil Moisture Monitoring
-- Cloud Data Upload
-- Dashboard Monitoring
-- Historical Data Logging
-- WiFi Connectivity
-- Relay-Based Pump Control
+- Soil moisture visualization
+- Moisture history graphs
+- Data logging
+- Relay control interface
+- System status monitoring
 
 ---
 
 # Technologies Used
 
-## Hardware
+### Hardware
 
 - ESP32 Development Board
-- Arduino Uno Compatible Board
 - Soil Moisture Sensor
 - Relay Module
-- Push Buttons
-- LEDs
+- Push Button
+- LED Indicator
 - Breadboard
 - Jumper Wires
 
-## Software
+### Software
 
 - Arduino IDE
 - Visual Studio Code
 - Git
 - GitHub
-- Streamlit
 - Python
-
-## Libraries
-
-- WiFi.h
-- HTTPClient.h
-- WebServer.h
-- ESP32 Arduino Core
+- Streamlit
 
 ---
 
-# Repository Structure
+# Safety Notes
 
-```text
-Task1/
-Task2/
-Task3/
-Task4/
-Task5/
-Task6/
-Task7/
-Task8/
-Task9/
-Task10/
-README.md
-```
+- Always verify wiring before powering the system.
+- Disconnect power before modifying hardware.
+- Ensure relay wiring follows safe operating limits.
+- Avoid exposing electronic components to water.
+- Keep API keys and credentials secure.
 
 ---
 
-# GitHub Tags
+# Final Outcome
 
-| Tag | Description |
-|-------|-------------|
-| v1.0-capstone | Final Automated Grow-Bench Prototype Release |
-
----
-
-# Learning Outcomes
-
-During this internship, the following skills were developed:
-
-- Embedded Systems Programming
-- Sensor Interfacing
-- Firmware Development
-- Git Version Control
-- Technical Documentation
-- IoT Communication
-- Dashboard Development
-- Project Testing and Validation
-- Engineering Problem Solving
+The internship successfully demonstrated the development of an IoT-enabled Automated Grow-Bench Prototype capable of monitoring soil conditions, controlling irrigation, logging sensor data, and providing user interaction through dashboards and firmware interfaces.
 
 ---
 
@@ -269,9 +219,3 @@ During this internship, the following skills were developed:
 B.Tech Electronics and Communication Engineering  
 Sree Chitra Thirunal College of Engineering  
 KTU ID: SCT23EC023
-
----
-
-# Internship Completion
-
-This repository represents the complete work completed during the Zelbytes Arduino Foundations Internship and includes all source code, reports, images, documentation, dashboards, and final project deliverables.
